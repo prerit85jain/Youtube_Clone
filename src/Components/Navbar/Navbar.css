@@ -3,10 +3,11 @@
     display: flex;
     height: calc(3.5rem - 2px);
     background-color: rgb(33, 33, 33);
+    justify-content: space-between;
 }
 .Burger_Logo_Navbar{
     display: flex;
-    
+    height: 3.3rem;
 }
 .Burger{
     display: flex;
