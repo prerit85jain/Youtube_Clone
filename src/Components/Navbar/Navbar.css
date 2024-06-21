@@ -29,6 +29,7 @@
 }
 .Logo_Div_Navbar{
     display: flex;
+    text-decoration: none;
 }
 .Logo_Title_Navbar{
     margin: auto;
