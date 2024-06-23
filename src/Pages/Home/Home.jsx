@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import LeftSidebar from '../../Components/LeftSidebar/LeftSidebar'
+import LeftSidebar from '../../Components/LeftSideBar/LeftSidebar'
 
 function Home() {
   return (
