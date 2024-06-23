@@ -3,6 +3,7 @@ import { AiOutlineHome } from 'react-icons/ai'
 import './LeftSidebar.css'
 import { MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
+import shorts from './Shorts.png'
 
 function LeftSidebar() {
   return (
@@ -14,6 +15,10 @@ function LeftSidebar() {
         <div className="icon_Sidebar_Div">
             <MdOutlineExplore size={22} className='icon_sidebar'/>
             <div className="text_sidebar_icon">Explore</div>
+        </div>
+        <div className="icon_Sidebar_Div">
+            <img src={shorts} width={22} className='icon_sidebar'/>
+            <div className="text_sidebar_icon">Shorts</div>
         </div>
         <div className="icon_Sidebar_Div">
             <MdOutlineSubscriptions size={22} className='icon_sidebar'/>
