@@ -9,16 +9,16 @@ import { useState } from 'react';
 
 function App() {
   const [toggleDrawerSidebar, setToggleDrawerSidebar] = useState({
-    dispay:"none",
+    display:"none",
   })
   const toggleDrawer=()=>{
-    if(toggleDrawerSidebar.dispay==="none"){
+    if(toggleDrawerSidebar.display==="none"){
       setToggleDrawerSidebar({
-        dispay:"flex"
+        display:"flex"
       })
     }else{
       setToggleDrawerSidebar({
-        dispay:"none"
+        display:"none"
       })
     }
   }
@@ -26,7 +26,10 @@ function App() {
     <Router>
       <Navbar toggleDrawer={toggleDrawer}/>
 
-        <DrawerSidebar toggleDrawer={toggleDrawer}/>
+        <DrawerSidebar 
+        toggleDrawer={toggleDrawer}
+        toggleDrawerSidebar={toggleDrawerSidebar}
+        />
 
       <AllRoutes/>
     </Router>

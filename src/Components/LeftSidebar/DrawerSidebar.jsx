@@ -4,18 +4,19 @@ import { AiFillLike, AiFillPlaySquare, AiOutlineHome } from 'react-icons/ai'
 import { MdOutlineExplore, MdOutlineSubscriptions, MdOutlineVideoLibrary, MdOutlineWatchLater } from 'react-icons/md'
 import shorts from './Shorts.png'
 import { FaHistory } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 
-function DrawerSidebar({toggleDrawer}) {
+function DrawerSidebar({toggleDrawer, toggleDrawerSidebar}) {
   return (
-    <div className="container_DrawerLeftSidebar">
+    <div className="container_DrawerLeftSidebar" style={toggleDrawerSidebar}>
         <div className="container2_DrawerLeftSidebar">
             <div className="drawer_leftsidebar">
-              <div className="icon_Sidebar_Div">
+              <NavLink to={'/'} className="icon_Sidebar_Div">
                 <p>
                   <AiOutlineHome size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">Home</div>
                 </p>
-              </div>
+              </NavLink>
               <div className="icon_Sidebar_Div">
                 <p>
                   <MdOutlineExplore size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
@@ -36,36 +37,36 @@ function DrawerSidebar({toggleDrawer}) {
               </div>
             </div>
             <div className="Library_Btn_DrawerLeftsidebar">
-              <div className="icon_Sidebar_Div">
+              <NavLink to={'/library'} className="icon_Sidebar_Div">
                 <p>
                   <MdOutlineVideoLibrary size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">Library</div>
                 </p>
-              </div>
-              <div className="icon_Sidebar_Div">
+              </NavLink>
+              <NavLink to={'/history'} className="icon_Sidebar_Div">
                 <p>
                   <FaHistory size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">History</div>
                 </p>
-              </div>
-              <div className="icon_Sidebar_Div">
+              </NavLink>
+              <NavLink to={'/yourvideo'} className="icon_Sidebar_Div">
                 <p>
                   <AiFillPlaySquare size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">Your Videos</div>
                 </p>
-              </div>
-              <div className="icon_Sidebar_Div">
+              </NavLink>
+              <NavLink to={'/watchlater'} className="icon_Sidebar_Div">
                 <p>
                   <MdOutlineWatchLater size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">Watch Later</div>
                 </p>
-              </div>
-              <div className="icon_Sidebar_Div">
+              </NavLink>
+              <NavLink to={'/likedvideos'} className="icon_Sidebar_Div">
                 <p>
                   <AiFillLike size={22} className={'icon_sidebar'} style={{margin: "auto 0.7rem"}}/>
                   <div className="text_sidebar_icon">Liked Videos</div>
                 </p>
-              </div>
+              </NavLink>
             </div>
             <div className="Subscriptions_lsdbar">
               <h3>Your Subscriptions</h3>
@@ -88,7 +89,7 @@ function DrawerSidebar({toggleDrawer}) {
             </div>
         </div>
         <div className="container3_DrawerLeftSidebar" onClick={()=>toggleDrawer()}>
-          
+
         </div>
     </div>
   )
