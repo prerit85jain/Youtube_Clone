@@ -7,7 +7,7 @@ import {IoMdNotificationsOutline} from 'react-icons/io'
 import {BiUserCircle} from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
-function Navbar() {
+function Navbar({toggleDrawer}) {
     // const CurrentUser=null;
     const CurrentUser = {
         result: {
@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <div className="Container_Navbar">
         <div className="Burger_Logo_Navbar">
-            <div className="Burger">
+            <div className="Burger" onClick={()=>toggleDrawer()}>
                 <p></p>
                 <p></p>
                 <p></p>
