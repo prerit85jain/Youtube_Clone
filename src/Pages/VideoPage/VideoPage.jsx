@@ -19,9 +19,25 @@ function VideoPage() {
                 <div className="views_videoPage">
                   5 views <div className="dot"></div> Uploaded 1 year ago
                 </div>
+
               </div>
             </div>
+              <div className="chanel_details_videoPage">
+                <b className="chanel_logo_videoPage">
+                  <p>C</p>
+                </b>
+                <p className="chanel_name_videoPage">Chanel Name</p>
+              </div>
+              <div className="comments_videoPage">
+                <h2>
+                  <u>Comments</u>
+                </h2>
+
+              </div>
           </div>
+        </div>
+        <div className="moreVideoBar">
+          More Video
         </div>
       </div>
     </div>
