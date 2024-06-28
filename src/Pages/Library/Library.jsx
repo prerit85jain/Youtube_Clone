@@ -1,10 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-
-function Library() {
-  return (
-    <div>Library</div>
-=======
 import './Library.css'
 import LeftSidebar from '../../Components/LeftSideBar/LeftSidebar'
 
@@ -16,7 +10,6 @@ function Library() {
         Library
       </div>
     </div>
->>>>>>> drawer
   )
 }
 
